@@ -29,6 +29,7 @@ handleCheckboxFilterChange = value => {
 
       render() {
   return <div>
+    <h1>Find your favorite kitty</h1>
     <SearchBar filterText={this.state.filterText} onTextFilterChange={this.handleTextFilterChange} onCheckboxFilterChange={this.handleCheckboxFilterChange} likesKids={this.state.likesKids} filterText={this.state.filterText}/>
     <CatTable likesKids={this.state.likesKids} filterText={this.state.filterText} kitties={this.props.kitties}/>
         </div>;

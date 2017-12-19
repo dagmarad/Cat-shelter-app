@@ -9858,7 +9858,7 @@ var CatTable = function (_React$Component) {
 
       return _react2.default.createElement(
         'table',
-        null,
+        { className: 'table table-bordered' },
         _react2.default.createElement(
           'thead',
           null,
@@ -9964,7 +9964,7 @@ var SearchBar = function (_React$Component) {
           _react2.default.createElement(
             'label',
             null,
-            _react2.default.createElement('input', { type: 'text', placeholder: 'Search...',
+            _react2.default.createElement('input', { className: 'form-control', type: 'text', placeholder: 'Search...',
               value: this.props.filterText, onChange: this.handleNameChange })
           )
         ),
@@ -10186,6 +10186,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return _react2.default.createElement(
           'div',
           null,
+          _react2.default.createElement(
+            'h1',
+            null,
+            'Find your favorite kitty'
+          ),
           _react2.default.createElement(_SearchBar2.default, _defineProperty({ filterText: this.state.filterText, onTextFilterChange: this.handleTextFilterChange, onCheckboxFilterChange: this.handleCheckboxFilterChange, likesKids: this.state.likesKids }, 'filterText', this.state.filterText)),
           _react2.default.createElement(_CatTable2.default, { likesKids: this.state.likesKids, filterText: this.state.filterText, kitties: this.props.kitties })
         );

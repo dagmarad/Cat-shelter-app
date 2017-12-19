@@ -33,7 +33,7 @@ class CatTable extends React.Component {
       });
 
 
-    return <table><thead><tr><th>Name</th><th>Age</th></tr></thead><tbody>{rows}</tbody></table>;
+    return <table className="table table-bordered"><thead><tr><th>Name</th><th>Age</th></tr></thead><tbody>{rows}</tbody></table>;
   }
 
 }

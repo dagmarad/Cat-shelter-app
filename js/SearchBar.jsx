@@ -22,7 +22,7 @@ import kitties from './zadanie00.js'
     render() {
 
       return  <form>
-                  <div><label><input type="text" placeholder="Search..."
+                  <div><label><input className="form-control" type="text" placeholder="Search..."
                   value={this.props.filterText}  onChange={this.handleNameChange}/>
                   </label></div>
 
